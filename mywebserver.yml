@@ -5,6 +5,6 @@
   - name: i want to install apache2 webserver on ansible debian nodes
     apt:
       name: apache2
-      
+      state: absent
    
 
