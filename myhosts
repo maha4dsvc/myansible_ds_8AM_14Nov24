@@ -9,6 +9,3 @@
 172.31.25.65
 172.31.25.66
 
-[mywebservers:vars]
-key=value
-mywebserverpack=apache2
