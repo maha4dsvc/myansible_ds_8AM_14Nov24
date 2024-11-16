@@ -11,4 +11,4 @@
 
 [mywebservers:vars]
 key=value
-mywebserverpack=apache2222
+mywebserverpack=apache2
