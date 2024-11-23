@@ -19,6 +19,10 @@
       dest: /home/admin/myfolder/myfirstplaybook.yml
       force_basic_auth: yes
 
+  - name:  install webserver
+    apt:
+      name: apache2
+      state: present
 
 
 
