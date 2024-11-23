@@ -1,0 +1,24 @@
+---
+- hosts: 172.31.4.169 
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: create myfolder
+    file: 
+       path: /home/admin/myfolder
+       state: directory
+
+  - name: copy a file into myfolder
+    copy:
+      src: mystaticfile
+      dest: /home/admin/myfolder/mystaticfile
+
+  - name: i want to downlod internet files
+    get_url:
+      url: https://github.com/maha4dsvc/myansible_ds_8AM_14Nov24/blob/main/myfirstplaybook.yml
+      dest: /home/admin/myfolder/myfirstplaybook.yml
+      force_basic_auth: yes
+
+
+
+
